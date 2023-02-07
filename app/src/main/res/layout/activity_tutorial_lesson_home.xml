@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorialLessonHome">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorial Lesson Home Page"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="270dp"
+        android:layout_height="157dp"
+        android:text="Here you can select subjects within the lesson and go to them. In this lesson there is only one section and a conclusion as this is the tutorial, to help you understand the structure of the lessons. Usually there will be multiple sections to a lesson each titled based on their subject, also there will be an introduction."
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Section 1"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lesson Introduction"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Section Selection"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="301dp"
+        android:layout_height="64dp"
+        android:text="Here you select the section you want to go to. You should start at the beginning, or you can pick up from where you left off at last time."
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conclusion"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Lesson Select"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="644dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
