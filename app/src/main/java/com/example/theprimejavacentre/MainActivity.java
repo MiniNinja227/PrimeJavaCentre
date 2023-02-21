@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.theprimejavacentre.ui.login.LoginActivity;
-import com.example.theprimejavacentre.ui.login.RegisterActivity;
+import com.example.theprimejavacentre.ui.login.Login;
+import com.example.theprimejavacentre.ui.login.Register;
 
 public class MainActivity extends AppCompatActivity {
     public Button RegisterBtn, LoginBtn, HomeBtn;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent LoginIntent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent LoginIntent = new Intent(MainActivity.this, Login.class);
                 startActivity(LoginIntent);
             }
         });
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         RegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent RegisterIntent = new Intent(MainActivity.this, RegisterActivity.class);
+                Intent RegisterIntent = new Intent(MainActivity.this, Register.class);
                 startActivity(RegisterIntent);
             }
         });

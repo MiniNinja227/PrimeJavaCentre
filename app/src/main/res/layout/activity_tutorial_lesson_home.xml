@@ -7,66 +7,95 @@
     tools:context=".TutorialLessonHome">
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/TutHomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Tutorial Lesson Home Page"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="270dp"
-        android:layout_height="157dp"
+        android:id="@+id/TutIntroText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:text="Here you can select subjects within the lesson and go to them. In this lesson there is only one section and a conclusion as this is the tutorial, to help you understand the structure of the lessons. Usually there will be multiple sections to a lesson each titled based on their subject, also there will be an introduction."
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="90dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TutIntroTitle" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:id="@+id/TutSection1Btn"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:text="Section 1"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="422dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TutorialSectSelectText" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/TutIntroTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:text="Lesson Introduction"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="71dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TutHomeTitle" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/TutSectSelectTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:text="Section Selection"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TutIntroText" />
 
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="301dp"
-        android:layout_height="64dp"
+        android:id="@+id/TutorialSectSelectText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:text="Here you select the section you want to go to. You should start at the beginning, or you can pick up from where you left off at last time."
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TutSectSelectTitle" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:id="@+id/TutConcBtn"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
         android:text="Conclusion"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="422dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/TutSection1Btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TutSection1Btn" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/ReturnToHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Lesson Select"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="644dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Back To Home Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

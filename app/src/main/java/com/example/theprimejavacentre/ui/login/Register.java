@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,21 +23,20 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.theprimejavacentre.HomeScreen;
 import com.example.theprimejavacentre.R;
-import com.example.theprimejavacentre.ui.login.LoginViewModel;
-import com.example.theprimejavacentre.ui.login.LoginViewModelFactory;
-import com.example.theprimejavacentre.databinding.ActivityLoginBinding;
+import com.example.theprimejavacentre.databinding.ActivityRegisterBinding;
 
-public class LoginActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
-    private ActivityLoginBinding binding;
+    private ActivityRegisterBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        binding = ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
@@ -128,6 +128,8 @@ public class LoginActivity extends AppCompatActivity {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+        Intent HomeIntent = new Intent(Register.this, Login.class);
+        startActivity(HomeIntent);
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
